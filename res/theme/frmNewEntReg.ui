@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<component type="Container" name="frmNewEntReg" cloudDestinationProperty="frmNewEntReg" scrollableX="false" scrollableY="true" >
+  <component type="Tabs" name="Tabs" cloudDestinationProperty="Tabs" uiid="Tabs" scrollableX="false" scrollableY="false" tabPlacement="0" tabTextPosition="0" >
+    <custom name="titles" type="java.lang.String" array="true" dimensions="1" >
+      <str>Info</str>
+      <str>Names</str>
+      <str>Enterprise</str>
+      <str>Director(s)</str>
+    </custom>
+    <component type="Container" name="ConInfo" tabTitle="Info" cloudDestinationProperty="ConInfo" layout="BoxLayout" boxLayoutAxis="Y" >
+      <component type="Container" name="Container" cloudDestinationProperty="Container" layout="BoxLayout" boxLayoutAxis="Y" >
+        <component type="SpanLabel" name="SpanLabel" cloudDestinationProperty="SpanLabel" >
+          <custom name="text" type="java.lang.String" value="New Enterprise Registration " />
+        </component>
+      </component>
+      <component type="CheckBox" name="ChBSubmitNameReservation" cloudDestinationProperty="ChBSubmitNameReservation" text="Submit a Name Reservation" >
+      </component>
+      <component type="Container" name="ConApprovedName" cloudDestinationProperty="ConApprovedName" layout="BoxLayout" boxLayoutAxis="Y" >
+        <component type="CheckBox" name="CheckBox" cloudDestinationProperty="CheckBox" text="Have an Approved Name" >
+        </component>
+        <component type="TextField" name="TxtApprovedNo" cloudBoundProperty="text" cloudDestinationProperty="TxtApprovedNo" text="" hint="Name Reservation Number" >
+        </component>
+      </component>
+      <component type="Button" name="BtnStartNewReg" cloudDestinationProperty="BtnStartNewReg" text="Continue with New Registration" >
+      </component>
+    </component>
+    <component type="Container" name="ConNames" tabTitle="Names" cloudDestinationProperty="ConNames" enabled="true" scrollVisible="true" >
+      <component type="Label" name="Label14" cloudDestinationProperty="Label14" text="Please Enter atleast one proposed name," >
+      </component>
+      <component type="Label" name="Label15" cloudDestinationProperty="Label15" text="Maximum of four names in order of preference." >
+      </component>
+      <component type="Container" name="Con4Names" cloudDestinationProperty="Con4Names" enabled="true" layout="BoxLayout" boxLayoutAxis="Y" >
+        <component type="TextField" name="Txtname1" cloudBoundProperty="text" cloudDestinationProperty="Txtname1" text="" hint="Proposed Name 1" >
+        </component>
+        <component type="Label" name="lblName1Response" cloudDestinationProperty="lblName1Response" focusable="true" text="Label1" >
+        </component>
+        <component type="TextField" name="Txtname2" cloudBoundProperty="text" cloudDestinationProperty="Txtname2" text="" hint="Proposed Name 2" >
+        </component>
+        <component type="Label" name="lblName2Response" cloudDestinationProperty="lblName2Response" text="Label2" >
+        </component>
+        <component type="TextField" name="Txtname3" cloudBoundProperty="text" cloudDestinationProperty="Txtname3" text="" hint="Proposed Name 3" >
+        </component>
+        <component type="Label" name="lblName3Response" cloudDestinationProperty="lblName3Response" text="Label" >
+        </component>
+        <component type="TextField" name="Txtname4" cloudBoundProperty="text" cloudDestinationProperty="Txtname4" uiid="TextField" text="" hint="Proposed Name 4" >
+        </component>
+        <component type="Label" name="lblName4Response" cloudDestinationProperty="lblName4Response" text="Label" >
+        </component>
+        <component type="Button" name="BtnTestNames" cloudDestinationProperty="BtnTestNames" text="Test Names" >
+        </component>
+        <component type="Button" name="BtnFileName" cloudDestinationProperty="BtnFileName" text="FIle Name Reservation" >
+        </component>
+      </component>
+    </component>
+    <component type="Container" name="ConEnterprise" tabTitle="Enterprise" cloudDestinationProperty="ConEnterprise" layout="BoxLayout" boxLayoutAxis="Y" >
+      <component type="Container" name="Container2" cloudDestinationProperty="Container2" >
+        <component type="Label" name="Label9" cloudDestinationProperty="Label9" text="Enterprise Details" >
+        </component>
+      </component>
+      <component type="Container" name="ConFye" cloudDestinationProperty="ConFye" layout="BoxLayout" boxLayoutAxis="Y" >
+        <component type="Label" name="Label8" cloudDestinationProperty="Label8" text="Finacial Year End Month" >
+        </component>
+        <component type="ComboBox" name="CmbFyeMonth" cloudDestinationProperty="ComboBox1" hint="FYE Month" >
+          <stringItem value="1" />
+          <stringItem value="2" />
+          <stringItem value="3" />
+          <stringItem value="4" />
+          <stringItem value="5" />
+          <stringItem value="6" />
+          <stringItem value="7" />
+          <stringItem value="8" />
+          <stringItem value="9" />
+          <stringItem value="10" />
+          <stringItem value="11" />
+          <stringItem value="12" />
+        </component>
+      </component>
+      <component type="Container" name="ContAutShares" cloudDestinationProperty="ContAutShares" layout="BoxLayout" boxLayoutAxis="Y" >
+        <component type="Label" name="Label10" cloudDestinationProperty="Label10" text="Authorised Shares" >
+        </component>
+        <component type="TextField" name="TxtAuthShares" cloudBoundProperty="text" cloudDestinationProperty="TxtAuthShares" text="100" >
+        </component>
+      </component>
+      <component type="Container" name="ConEmail" cloudDestinationProperty="ConEmail" layout="BoxLayout" boxLayoutAxis="Y" >
+        <component type="Label" name="Label11" cloudDestinationProperty="Label11" text="Email Address" >
+        </component>
+        <component type="TextField" name="TxtEmail" cloudBoundProperty="text" cloudDestinationProperty="TxtEmail" text="" hint="Email Address" >
+        </component>
+      </component>
+      <component type="Container" name="ConPhysAddr" cloudDestinationProperty="ConPhysAddr" layout="BoxLayout" boxLayoutAxis="Y" >
+        <component type="Label" name="Label12" cloudDestinationProperty="Label12" text="Physical Address" >
+        </component>
+        <component type="TextField" name="txtPhysAddr1" cloudBoundProperty="text" cloudDestinationProperty="txtPhysAddr1" text="" hint="Physical Address Line 1" >
+        </component>
+        <component type="TextField" name="txtPhysAddr2" cloudBoundProperty="text" cloudDestinationProperty="txtPhysAddr2" text="" hint="Physical Address Line 2" >
+        </component>
+        <component type="TextField" name="txtPhysAddr3" cloudBoundProperty="text" cloudDestinationProperty="txtPhysAddr3" text="" hint="Physical Address Line 3" >
+        </component>
+        <component type="ComboBox" name="CmbPhysProvince" cloudDestinationProperty="CmbPhysProvince" hint="Province" >
+          <stringItem value="Select Province" />
+          <stringItem value="Item 1" />
+          <stringItem value="Item 2" />
+          <stringItem value="Item 3" />
+        </component>
+        <component type="TextField" name="txtPhysCode" cloudBoundProperty="text" cloudDestinationProperty="txtPhysCode" text="" hint="Physical Address Code" >
+        </component>
+      </component>
+      <component type="Container" name="ConPostalAddress" cloudDestinationProperty="ConPostalAddress" layout="BoxLayout" boxLayoutAxis="Y" >
+        <component type="Label" name="Label13" cloudDestinationProperty="Label13" text="Postall Address" >
+        </component>
+        <component type="CheckBox" name="ChbIssameasPhys" cloudDestinationProperty="ChbIssameasPhys" text="Is Same as Physicall Address" >
+        </component>
+        <component type="TextField" name="TxtPostaladdr1" cloudBoundProperty="text" cloudDestinationProperty="TxtPostaladdr1" text="" hint="Postal Address Line 1" >
+        </component>
+        <component type="TextField" name="TxtPostaladdr2" cloudBoundProperty="text" cloudDestinationProperty="TxtPostaladdr2" text="" hint="Postal Address Line 2" >
+        </component>
+        <component type="TextField" name="TxtPostaladdr3" cloudBoundProperty="text" cloudDestinationProperty="TxtPostaladdr3" text="" hint="Postal Address Line 3" >
+        </component>
+        <component type="ComboBox" name="CmbPostalProvince" cloudDestinationProperty="CmbPostalProvince" >
+          <stringItem value="Select Province" />
+          <stringItem value="Item 1" />
+          <stringItem value="Item 2" />
+          <stringItem value="Item 3" />
+        </component>
+        <component type="TextField" name="TxtPostalcode" cloudBoundProperty="text" cloudDestinationProperty="TxtPostalcode" text="" hint="Postal Address Code" >
+        </component>
+      </component>
+    </component>
+    <component type="Container" name="ConDirectors" tabTitle="Director(s)" cloudDestinationProperty="ConDirectors" layout="BoxLayout" boxLayoutAxis="Y" >
+      <component type="Container" name="ConIDandnames" cloudDestinationProperty="ConIDandnames" layout="BoxLayout" boxLayoutAxis="Y" >
+        <component type="Label" name="Label1" cloudDestinationProperty="Label1" text="Director ID Number" >
+        </component>
+        <component type="TextField" name="TxtIdNo" cloudBoundProperty="text" cloudDestinationProperty="TextField" text="" hint="Id Number" >
+        </component>
+        <component type="Label" name="Label16" cloudDestinationProperty="Label16" text="Relative ID Number" >
+        </component>
+        <component type="TextField" name="TxtrelativeID" cloudBoundProperty="text" cloudDestinationProperty="TxtrelativeID" text="" hint="Enter ID Number of a Direct Relative" >
+        </component>
+        <component type="Button" name="BtnGetIdInfo" cloudDestinationProperty="BtnGetIdInfo" text="Validate ID Numbers" >
+        </component>
+        <component type="Label" name="LblNames" cloudDestinationProperty="LblNames" text="Name(s)" >
+        </component>
+        <component type="Label" name="LblSurname" cloudDestinationProperty="LblSurname" text="Surname" >
+        </component>
+      </component>
+      <component type="Container" name="ConAppointDate" cloudDestinationProperty="ConAppointDate" layout="BoxLayout" boxLayoutAxis="Y" >
+        <component type="Container" name="ConDir" cloudDestinationProperty="ConDir" layout="BoxLayout" boxLayoutAxis="Y" >
+          <component type="Label" name="Label" cloudDestinationProperty="Label" text="Director Type" >
+          </component>
+          <component type="ComboBox" name="Cmbdirectortype" cloudDestinationProperty="ComboBox" >
+            <stringItem value="Director" />
+            <stringItem value="Non Executive Director" />
+            <stringItem value="Alternate Director" />
+          </component>
+        </component>
+        <component type="Label" name="Label2" cloudDestinationProperty="Label2" text="Appointment Date" >
+        </component>
+        <component type="Picker" name="dtAppDate" cloudDestinationProperty="dtAppDate" text="2018/06/14" >
+        </component>
+      </component>
+      <component type="Container" name="ContDateofBirth" cloudDestinationProperty="ContDateofBirth" layout="BoxLayout" boxLayoutAxis="Y" >
+        <component type="Label" name="Label3" cloudDestinationProperty="Label3" text="Date of Birth" >
+        </component>
+        <component type="Picker" name="DtDatofBirth" cloudDestinationProperty="DtDatofBirth" text="2018/06/14" >
+        </component>
+      </component>
+      <component type="Container" name="ConCell" cloudDestinationProperty="ConCell" layout="BoxLayout" boxLayoutAxis="Y" >
+        <component type="Label" name="Label4" cloudDestinationProperty="Label4" text="CellPhone Number" >
+        </component>
+        <component type="TextField" name="TxtCell" cloudBoundProperty="text" cloudDestinationProperty="TxtCell" text="" hint="CellPhone Number" >
+        </component>
+      </component>
+      <component type="Container" name="ConEmail" cloudDestinationProperty="ConEmail" layout="BoxLayout" boxLayoutAxis="Y" >
+        <component type="Label" name="Label5" cloudDestinationProperty="Label5" text="Email Address" >
+        </component>
+        <component type="TextField" name="TxtEmail" cloudBoundProperty="text" cloudDestinationProperty="TxtEmail" text="" hint="Email Address" >
+        </component>
+      </component>
+      <component type="Container" name="ConPhysAddress" cloudDestinationProperty="ConPhysAddress" layout="BoxLayout" boxLayoutAxis="Y" >
+        <component type="Label" name="Label6" cloudDestinationProperty="Label6" text="Physical Address" >
+        </component>
+        <component type="TextField" name="PhysAddr1" cloudBoundProperty="text" cloudDestinationProperty="PhysAddr1" text="" hint="Physical Address Line 1" >
+        </component>
+        <component type="TextField" name="PhysAddr2" cloudBoundProperty="text" cloudDestinationProperty="PhysAddr2" text="" hint="Physical Address Line 2" >
+        </component>
+        <component type="TextField" name="PhysAddr3" cloudBoundProperty="text" cloudDestinationProperty="PhysAddr3" text="" hint="Physical Address Line 3" >
+        </component>
+        <component type="ComboBox" name="CmbProvince" cloudDestinationProperty="CmbProvince" hint="Province" >
+          <stringItem value="Select Province" />
+          <stringItem value="Item 1" />
+          <stringItem value="Item 2" />
+          <stringItem value="Item 3" />
+        </component>
+        <component type="TextField" name="Physaddrcode" cloudBoundProperty="text" cloudDestinationProperty="Physaddrcode" text="" hint="Physical Address Postal Code" >
+        </component>
+      </component>
+      <component type="Container" name="ConPostalAddress" cloudDestinationProperty="ConPostalAddress" layout="BoxLayout" boxLayoutAxis="Y" >
+        <component type="Label" name="Label7" cloudDestinationProperty="Label7" text="Postal Address" >
+        </component>
+        <component type="CheckBox" name="ChbBaddresssame" cloudDestinationProperty="ChbBaddresssame" focusable="true" text="Same as Physical Address" >
+        </component>
+        <component type="TextField" name="TxtPostalAddr1" cloudBoundProperty="text" cloudDestinationProperty="TxtPostalAddr1" text="" hint="Postal Address Line 1" >
+        </component>
+        <component type="TextField" name="TxtPostalAddr2" cloudBoundProperty="text" cloudDestinationProperty="TxtPostalAddr2" text="" hint="Postal Address Line 2" >
+        </component>
+        <component type="TextField" name="TxtPostalAddr3" cloudBoundProperty="text" cloudDestinationProperty="TxtPostalAddr3" text="" hint="Postal Address Line 3" >
+        </component>
+        <component type="ComboBox" name="CmbPostalProvince" cloudDestinationProperty="CmbPostalProvince" >
+          <stringItem value="Select Province" />
+          <stringItem value="Item 1" />
+          <stringItem value="Item 2" />
+          <stringItem value="Item 3" />
+        </component>
+        <component type="TextField" name="TxtPostalCode" cloudBoundProperty="text" cloudDestinationProperty="TxtPostalCode" text="" hint="Postal Address Code" >
+        </component>
+      </component>
+      <component type="Button" name="BtnAddDirector" cloudDestinationProperty="BtnAddDirector" focusable="true" text="AddDirector" >
+      </component>
+    </component>
+  </component>
+</component>

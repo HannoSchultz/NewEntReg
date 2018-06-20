@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<component type="Form" name="Main" cloudDestinationProperty="Main" title="Hi World" >
+  <component type="Button" name="Button" cloudDestinationProperty="Button" commandName="New Registration" commandId="1" commandAction="frmNewEntReg1" commandBack="false" text="New Registration" >
+  </component>
+</component>
